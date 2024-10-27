@@ -1,0 +1,14 @@
+# Configuration settings for urban-traffic-project
+
+data_paths:
+  morning_data: "C:/Users/arabi/OneDrive/Desktop/New folder/Objective 1/ICPR-2024/urban-traffic-project/data/processed/Morning_Combined.xlsx"
+  afternoon_data: "C:/Users/arabi/OneDrive/Desktop/New folder/Objective 1/ICPR-2024/urban-traffic-project/data/processed/Afternoon_Combined.xlsx"
+
+features:
+  clustering: 
+    - "Location"               # Adjust based on the features in your dataset
+    - "Speed Range (Km/hr)"
+    - "Time Interval"
+    - "% of Speed Violators"    # Add additional features as needed for clustering
+  markov: 
+    - "LOS"                     # Level of Service feature for Markov analysis

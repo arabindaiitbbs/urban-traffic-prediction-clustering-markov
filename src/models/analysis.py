@@ -54,7 +54,7 @@ def calculate_stationary_distribution(transition_matrix):
 
 # Running Analysis for Morning and Afternoon Sessions
 def main_analysis():
-    data_manager = DataManager()
+    data_manager = DataManager(config_path="C:/Users/arabi/OneDrive/Desktop/New folder/Objective 1/ICPR-2024/urban-traffic-project/config.yaml")
     features_clustering, features_markov = data_manager.get_features()
     morning_path, afternoon_path = data_manager.get_data_paths()
 
