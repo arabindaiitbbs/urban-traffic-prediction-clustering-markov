@@ -1,0 +1,14 @@
+"# Ignore unnecessary files" 
+# Ignore common system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache and virtual environment folders
+__pycache__/
+*.pyc
+venv/
+
+# Ensure Excel files are included
+!*.xlsx
+!*.xls
+
